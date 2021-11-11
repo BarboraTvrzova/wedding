@@ -27,19 +27,36 @@
 }
 
 .photo {
-  width: 450px;
+  position: relative;
+  width: 100%;
   height: 450px;
+  max-height: 450px;
+  max-width: 450px;
+
   border-radius: 50%;
-  max-width: 40%;
+  overflow: hidden;
+  width: 30vw;
+  height: 30vw;
+  aspect-ratio: 1;
+  margin: 0 30px;
 }
 
-.jeff {
+.photo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* .jeff {
   background: url('../img/Jeff.jpeg') no-repeat center center/cover;
-}
+} */
 
-.bara {
+/* .bara {
   background: url('../img/Bara3.jpeg') no-repeat center center/cover;
-}
+} */
 
 .us-content p {
   font-family: 'Alex Brush', cursive;
@@ -49,4 +66,24 @@
   width: 10%;
   text-align: center;
   color: #333;
+  line-height: 1;
+}
+
+@media (max-width: 550px) {
+  .us-content {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .us-content p {
+    width: 100%;
+    margin: 18px 0;
+  }
+
+  .photo {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 45vw;
+    height: 45vw;
+  }
 }

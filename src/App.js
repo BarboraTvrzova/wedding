@@ -1,13 +1,18 @@
+import './App.css'
+import Home from './Home'
 
-import './App.css';
-import Home from './Home';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
-      <Home />    
-    </div>
-  );
+    <Router>
+      <div className='App'>
+        <Switch>
+          <Route path='/:id' component={Home} />
+        </Switch>
+      </div>
+    </Router>
+  )
 }
 
-export default App;
+export default App

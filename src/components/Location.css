@@ -28,6 +28,7 @@
   text-transform: none;
   padding-bottom: 5px;
   color: #333;
+  font-weight: 400;
 }
 
 .location a {
@@ -42,24 +43,53 @@
   padding-bottom: 25px;
   padding-top: 50px;
   color: #333;
+  font-weight: 400;
 }
 
 .location p {
   max-width: 1110px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
   color: #333;
   opacity: 0.8;
+}
+.location-info {
+  width: 100%;
+  max-width: 500px;
 }
 
 .location a {
   font-size: 16px;
   text-decoration: none;
-  text-transform: uppercase;
-  font-family: 'Roboto', sans-serif;
-  padding-top: 20px;
+  padding: 10px 22px;
+  margin: 0 auto;
+  margin-top: 40px;
+  outline: none;
+  border: none;
+  /* font-family: 'Alex Brush', cursive; */
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
 }
 
-.location a:hover {
-  color: #b4d1ab;
+.location a ul {
+  list-style: none;
+}
+
+.hotel-btn {
+  border-radius: 8px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.hotel-btn:hover {
+  color: #ffffff;
+  background-color: #70a076;
+}
+
+.map {
+  height: 500px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 18px;
 }
