@@ -25,8 +25,6 @@ const MyMapComponent = withScriptjs(
 )
 
 export const Location = () => {
-  //api-key: AIzaSyCVoSZ2xc6gv8lwo2uNoyUXiz7teAZNN-g
-
   const controls = useAnimation()
   const [ref, inView] = useInView()
 
@@ -44,8 +42,7 @@ export const Location = () => {
         initial='hidden'
         transition={{
           ease: slideUp.transition.ease,
-          duration: 0.5,
-          delay: 0.2
+          duration: 0.5
         }}
         variants={{
           visible: slideUp.animate,
@@ -63,7 +60,7 @@ export const Location = () => {
         transition={{
           ease: slideUp.transition.ease,
           duration: 0.5,
-          delay: 0.5
+          delay: 0.3
         }}
         variants={{
           visible: slideUp.animate,
@@ -87,7 +84,7 @@ export const Location = () => {
         transition={{
           ease: slideUp.transition.ease,
           duration: 0.5,
-          delay: 0.8
+          delay: 0.6
         }}
         variants={{
           visible: slideUp.animate,
@@ -122,18 +119,6 @@ export const Location = () => {
         href='https://www.booking.com/searchresults.html?label=gen173nr-1DCBkoggI46AdIM1gEaAKIAQGYATG4AQfIAQzYAQPoAQH4AQKIAgGoAgO4Aquhj4wGwAIB0gIkMjU4ZmVmMzAtMDRkNC00MTc3LWFmZTEtNzkxZWNmMmIzM2I32AIE4AIB&lang=en-us&sid=558a380bdf7b437707fd8a1459c4c7a6&sb=1&sb_lp=1&src=index&src_elem=sb&error_url=https%3A%2F%2Fwww.booking.com%2Findex.html%3Flabel%3Dgen173nr-1DCBkoggI46AdIM1gEaAKIAQGYATG4AQfIAQzYAQPoAQH4AQKIAgGoAgO4Aquhj4wGwAIB0gIkMjU4ZmVmMzAtMDRkNC00MTc3LWFmZTEtNzkxZWNmMmIzM2I32AIE4AIB%3Bsid%3D558a380bdf7b437707fd8a1459c4c7a6%3Bsb_price_type%3Dtotal%3Bsig%3Dv14bielcZr%26%3B&ss=Prague%2C+Czech+Republic&is_ski_area=&checkin_year=&checkin_month=&checkout_year=&checkout_month=&group_adults=2&group_children=0&no_rooms=1&b_h4u_keep_filters=&from_sf=1&ss_raw=Prague&ac_position=0&ac_langcode=en&ac_click_type=b&dest_id=-553173&dest_type=city&iata=PRG&place_id_lat=50.08773&place_id_lon=14.421133&search_pageview_id=13165717193f0215&search_selected=true&search_pageview_id=13165717193f0215&ac_suggestion_list_length=5&ac_suggestion_theme_list_length=0'
         target='_blank'
         className='hotel-btn'
-        // ref={ref}
-        // animate={controls}
-        // initial='hidden'
-        // transition={{
-        //   ease: slideUp.transition.ease,
-        //   duration: 0.5,
-        //   delay: 1.7
-        // }}
-        // variants={{
-        //   visible: slideUp.animate,
-        //   hidden: slideUp.initial
-        // }}
       >
         Hotels in Prague
       </motion.a>

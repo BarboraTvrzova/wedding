@@ -25,8 +25,7 @@ const Hero = () => {
             initial='hidden'
             transition={{
               ease: slideUp.transition.ease,
-              duration: 0.5,
-              delay: 0.6
+              duration: 0.5
             }}
             variants={{
               visible: slideUp.animate,
@@ -43,7 +42,7 @@ const Hero = () => {
             transition={{
               ease: slideUp.transition.ease,
               duration: 0.5,
-              delay: 0.9
+              delay: 0.3
             }}
             variants={{
               visible: slideUp.animate,
@@ -60,7 +59,7 @@ const Hero = () => {
             transition={{
               ease: slideUp.transition.ease,
               duration: 0.5,
-              delay: 1.2
+              delay: 0.6
             }}
             variants={{
               visible: slideUp.animate,
@@ -68,23 +67,6 @@ const Hero = () => {
             }}
           >
             Tuesday 24th of May 2022
-          </motion.p>
-          <motion.p
-            ref={ref}
-            animate={controls}
-            initial='hidden'
-            transition={{
-              ease: slideUp.transition.ease,
-              duration: 0.5,
-              delay: 1.5
-            }}
-            variants={{
-              visible: slideUp.animate,
-              hidden: slideUp.initial
-            }}
-            className='font'
-          >
-            1:00pm
           </motion.p>
         </motion.div>
       </div>

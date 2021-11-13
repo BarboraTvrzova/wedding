@@ -4,27 +4,6 @@ import { useInView } from 'react-intersection-observer'
 import { motion, useAnimation } from 'framer-motion'
 import { slideUp } from '../animations'
 
-// let date = new Date
-
-// let currentDate = {
-//   month: date.getMonth(),
-//   day: date.getDate(),
-//   hrs: date.getHours()
-// }
-
-// console.log(currentDate)
-
-// const weddingDate = new Date('May 24, 2022 13:00:00 GMT+1:00')
-// console.log(weddingDate)
-
-// let eventDate = {
-//   month: weddingDate.getMonth(),
-//   day: weddingDate.getDate(),
-//   hrs: weddingDate.getHours()
-// }
-
-// console.log(eventDate)
-
 var today = new Date()
 var event = new Date('May 24, 2022 13:00:00 GMT+1:00')
 var diff = new Date(event.getTime() - today.getTime())
@@ -52,8 +31,7 @@ const Countdown = () => {
         initial='hidden'
         transition={{
           ease: slideUp.transition.ease,
-          duration: 0.5,
-          delay: 0.3
+          duration: 0.5
         }}
         variants={{
           visible: slideUp.animate,
@@ -70,7 +48,7 @@ const Countdown = () => {
         transition={{
           ease: slideUp.transition.ease,
           duration: 0.5,
-          delay: 0.5
+          delay: 0.3
         }}
         variants={{
           visible: slideUp.animate,
@@ -89,7 +67,7 @@ const Countdown = () => {
         transition={{
           ease: slideUp.transition.ease,
           duration: 0.5,
-          delay: 0.7
+          delay: 0.6
         }}
         variants={{
           visible: slideUp.animate,

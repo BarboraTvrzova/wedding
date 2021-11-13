@@ -25,8 +25,7 @@ const Us = () => {
           initial='hidden'
           transition={{
             ease: slideUp.transition.ease,
-            duration: 0.5,
-            delay: 0.3
+            duration: 0.5
           }}
           variants={{
             visible: slideUp.animate,
@@ -42,7 +41,7 @@ const Us = () => {
           transition={{
             ease: slideUp.transition.ease,
             duration: 0.5,
-            delay: 0.5
+            delay: 0.3
           }}
           variants={{
             visible: slideUp.animate,
@@ -58,8 +57,7 @@ const Us = () => {
           initial='hidden'
           transition={{
             ease: slideUp.transition.ease,
-            duration: 0.5,
-            delay: 0.3
+            duration: 0.5
           }}
           variants={{
             visible: slideUp.animate,

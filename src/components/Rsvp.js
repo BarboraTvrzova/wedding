@@ -36,21 +36,14 @@ const Rsvp = () => {
     }
   }, [controls, inView])
 
-  // useEffect(() => {
-  //   console.log(formData)
-  // }, [formData])
-
   const getFirstName = () => {
     const name = formData.name.split(' ')
     const firstName = name[0]
-    // console.log(name)
-    // console.log(firstName)
     return firstName
   }
 
   const handleSubmit = async e => {
     e.preventDefault()
-    // console.log(formData)
 
     setLoading(true)
 
@@ -70,7 +63,7 @@ const Rsvp = () => {
         setLoading(false)
         setFormSubmitted(true)
         toast.success('RSVP Submitted!')
-      }, 2500)
+      }, 1500)
     }
   }
 
@@ -98,8 +91,7 @@ const Rsvp = () => {
         initial='hidden'
         transition={{
           ease: slideUp.transition.ease,
-          duration: 0.5,
-          delay: 0.5
+          duration: 0.5
         }}
         variants={{
           visible: slideUp.animate,
@@ -119,7 +111,7 @@ const Rsvp = () => {
           transition={{
             ease: slideUp.transition.ease,
             duration: 0.5,
-            delay: 0.8
+            delay: 0.3
           }}
           variants={{
             visible: slideUp.animate,
