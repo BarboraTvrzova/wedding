@@ -2,15 +2,16 @@
   position: relative;
 }
 .hero-bg {
-  background: url('../img/bg-wide-2.jpeg') no-repeat center top/cover;
+  background: url('https://res.cloudinary.com/gjtorres-dev/image/upload/c_scale,w_2136/v1636787954/jeff-bara-wedding-site/bg-wide-2_u2zxyy.jpg')
+    no-repeat center top/cover;
   width: 100vw;
   height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
-  filter: blur(3px);
 
   z-index: 10;
+  background-attachment: fixed;
 }
 
 .hero-bg::before {
@@ -121,7 +122,7 @@
   left: 50%;
   transform: translate(-50%);
   width: 250%;
-  height: 250%;
+  height: 225%;
   background: url('../img/frame-3.png') no-repeat center center/contain;
   overflow: hidden;
 }

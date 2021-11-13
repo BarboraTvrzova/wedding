@@ -10,8 +10,8 @@ import './Home.css'
 const Home = () => {
   return (
     <div className='home'>
-      <a href='#rsvp' className='btn'>
-        rsvp
+      <a href='#rsvp' className='btn rsvp-btn'>
+        RSVP
       </a>
       <Hero />
       <Countdown />

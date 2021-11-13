@@ -4,6 +4,7 @@ import { useInView } from 'react-intersection-observer'
 import { motion, useAnimation } from 'framer-motion'
 import { slideUp } from '../animations'
 import Spinner from '../components/Spinner'
+import GeorgiaWedding from '../img/georgia-wedding.jpg'
 
 import 'react-toastify/dist/ReactToastify.css'
 import './Rsvp.css'
@@ -17,6 +18,7 @@ const Rsvp = () => {
   const [formSubmitted, setFormSubmitted] = useState(false)
   const [isPlusOneVeggieChecked, setIsPlusOneVeggieChecked] = useState(false)
   const [isLoading, setLoading] = useState(false)
+  const [showSecret, setShowSecret] = useState(false)
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -130,6 +132,7 @@ const Rsvp = () => {
             type='text'
             placeholder='Full Name'
             name='name'
+            maxLength={30}
             value={formData.name}
             onChange={handleInputChange}
           />
@@ -228,19 +231,63 @@ const Rsvp = () => {
       ) : (
         <div className='thank-you'>
           {!formData.attending ? (
-            <h3>
-              We are sorry you couldn't make it,{' '}
-              <span style={{ textTransform: 'capitalize' }}>
-                {getFirstName()}
-              </span>
-              ! 🥺
-            </h3>
+            <>
+              <h3>
+                We are sorry you couldn't make it,{' '}
+                <span style={{ textTransform: 'capitalize' }}>
+                  {getFirstName()}
+                </span>
+                ! 🥺
+              </h3>
+
+              <p>We also have a secret to reveal...</p>
+
+              {!showSecret && (
+                <button
+                  className='secret-btn'
+                  onClick={() => setShowSecret(true)}
+                >
+                  What's the secret?
+                </button>
+              )}
+
+              {showSecret && (
+                <>
+                  <h3 className='eloped-h3'>We eloped in Georgia! </h3>
+
+                  <div className='georgia-pic'>
+                    <img src={GeorgiaWedding} alt='' />
+                  </div>
+                </>
+              )}
+            </>
           ) : (
             <>
               <h3>Thank you for RSVP-ing {getFirstName()}!</h3>
               <p style={{ marginTop: 10 }}>
                 We can't wait for you to join us on our big day 😁
               </p>
+
+              <p>We also have a secret to reveal...</p>
+
+              {!showSecret && (
+                <button
+                  className='secret-btn'
+                  onClick={() => setShowSecret(true)}
+                >
+                  What's the secret?
+                </button>
+              )}
+
+              {showSecret && (
+                <>
+                  <h3 className='eloped-h3'>We eloped in Georgia! </h3>
+
+                  <div className='georgia-pic'>
+                    <img src={GeorgiaWedding} alt='' />
+                  </div>
+                </>
+              )}
             </>
           )}
         </div>

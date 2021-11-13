@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   padding-bottom: 400px;
-  background-image: url('../img/bg.jpeg');
+  background-image: url('https://res.cloudinary.com/gjtorres-dev/image/upload/c_scale,w_1849/v1636787954/jeff-bara-wedding-site/bg_ndax2i.jpg');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -63,7 +63,9 @@ form {
 .thank-you {
   width: 50%;
   max-width: 1110px;
-  height: 300px;
+  min-height: 300px;
+  height: auto;
+
   display: flex;
   flex-direction: column;
   border-radius: 3px;
@@ -174,5 +176,62 @@ button {
 
   .form-field {
     font-size: 16px;
+  }
+}
+
+.eloped-h3 {
+  margin-top: 48px;
+}
+
+.secret-btn {
+  font-size: 16px;
+  text-decoration: none;
+  padding: 10px 22px;
+  margin: 0 auto;
+  margin-top: 40px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  border-radius: 8px;
+  color: #ffffff;
+  background-color: #70a076;
+  transition: all 0.3s ease-in-out;
+  width: auto;
+}
+
+.georgia-pic {
+  position: relative;
+  margin-top: 18px;
+}
+
+.georgia-pic img {
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  width: 60%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 550px) {
+  form,
+  .thank-you {
+    width: 85%;
+  }
+
+  .radios h4,
+  .radio-group {
+    font-size: 14px;
+  }
+
+  .form-field {
+    font-size: 16px;
+  }
+
+  .georgia-pic img {
+    width: 80%;
   }
 }
